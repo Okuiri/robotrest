@@ -1,0 +1,16 @@
+/*------------------------
+    This code runs the robot
+    Fwd (time or dist)
+    Rev (time or dist)
+    Left (degree)
+    Right (degree)
+
+*/
+
+var mraa = require('mraa') //possible gpio-admin for RasPi
+wheel1.dir(mraa.DIR_OUT);
+    
+
+function forward(int sec){
+    //for example  
+    

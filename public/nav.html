@@ -1,0 +1,45 @@
+<!doctype html>
+<html ng-app="robotQueue">
+  <head>
+    <!-- META -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Robot Queue </title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<style>
+		html		{overflow-y:scroll;}
+		body		{padding-top:50px;}
+		#todo-list	{margin-bottom:30px;}
+	</style>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    <!--<script src="mech.js"></script>-->
+  </head>
+  <body ng-controller="mainController">
+    <div class="container">
+      <div class="jumbotron text-center">
+        <h1>Robot Controls</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4 col-sm-offset-4">
+          <button class="btn btn-primary btn-lg" ng-click="moveForward()">FWD</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <button class="btn btn-primary btn-lg" ng-click="moveLeft()">Left</button>
+        </div>
+        <div class="col-sm-4">
+          <button class="btn btn-primary btn-lg" ng-click="moveBackward()">BWD</button>
+        </div>
+        <div class="col-sm-4">
+          <button class="btn btn-primary btn-lg" ng-click="moveRight()">Right</button>
+        </div>
+      </div>
+      
+    </div>
+</body>
+</html>
